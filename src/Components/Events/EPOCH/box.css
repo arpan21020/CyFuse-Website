@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+.box{
+    box-shadow: 0px 1px 20px #27497D29;
+    margin-bottom: 0.7em;
+    padding-left: 2em;
+    border-radius: 1em;
+    margin-right: 2.7em;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .Box_heading{
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    font-family:'Roboto', sans-serif;
+    color:#1C4980;
+    font-weight: 600;
+}
+.box .Box_content{
+    margin-right: 6em;
+    margin-bottom: 1.5em;
+    font-family:'Inter', sans-serif;
+    color: #1C4980;
+    font-weight: 400;
+}
+.box .apply_button_div{
+    display: flex;
+    justify-content: flex-end;
+}
+.box .apply_button{
+    background-color: #3770FF;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 8.5em;
+    height: 2.5em;
+    border-radius: 1.75em;
+    margin:1em;
+}
+.box .apply_button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+@media(max-width:600px){
+.box{
+    max-width: 84%;
+    margin-right: 1em;
+} .box .Box_content{
+    margin-right: 0.5em;
+}
+.box .Box_content p{
+    font-size:medium;
+}
+}

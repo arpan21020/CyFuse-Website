@@ -1,0 +1,236 @@
+
+body::-webkit-scrollbar {
+    width: 0; /* For Chrome, Safari, and Opera */
+  }
+.landingpage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    height: 100vh;
+    background-image: url('../../../public/background_img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.landingpage .leftside{
+    display: flex;
+    flex-direction: column;
+}
+
+.landingpage .leftside h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #3770FF;
+    margin: 0 0 0 0;
+}
+.landingpage .leftside h1{
+    font-size: 8em;
+    font-weight: 900;
+    color: #00B4AA;
+    margin: 0 0 0.3em 0;
+    letter-spacing: 5px;
+
+}
+.landingpage .leftside h4{
+    font-size: 2em;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0 0 0;
+}
+.landingpage .leftside .joinnow {
+    margin-top: 1.2em;
+    /* text-align: center; */
+    cursor: pointer;
+
+}
+.landingpage .leftside .joinnow a{
+    font-size: 1.5em;
+    background: linear-gradient(to right, #1049EE, #9559B6);;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5em 3em 0.5em 3em;
+
+
+}
+.landingpage .rightside .imageContainer img{
+    height: 500px;
+
+}
+.aboutus{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding: 8em 10em;
+    /* height: 90vh; */
+    background-color: #EDEDED;
+    
+
+}
+.aboutus .leftside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus .rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus .leftside .aboutus_title{
+    display: flex;
+    align-items: center;
+}
+.aboutus .leftside .aboutus_title h1{
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0em 0em 0em 0em;
+    flex-shrink: 0;
+}
+
+.aboutus .leftside .imageContainer img{
+    margin-top: 2em;
+    height: 300px;
+    
+}
+
+.aboutus .rightside .imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.aboutus .rightside .about_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.02em solid #A0A0A0;
+    border-radius: 10px;
+    /* width: 600px; */
+    margin: 1em 8em 1em 8em;
+    padding: 2em;
+
+}
+
+@media (max-width: 1300px) {
+    .aboutus .rightside .about_content{
+        margin: 1em 5em 1em 5em;
+    }
+  }
+
+  @media (max-width: 1100px) {
+
+    .aboutus .rightside .about_content{
+        margin: 1em 3em 1em 3em;
+    }
+    .landingpage .leftside h2{
+        font-size: 2em;
+    }
+    .landingpage .leftside h1{
+        font-size: 6em;
+    }
+    .landingpage .leftside h4{
+        font-size: 1.75em;
+    }
+.landingpage .leftside .joinnow a{
+    font-size: 1.2em;
+}
+.landingpage .rightside .imageContainer img{
+    height: 400px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .aboutus{
+        flex-direction: column;
+        
+    }
+    .aboutus .aboutus_title{
+        margin-right: 4em;
+    }
+    .aboutus .leftside{
+        flex-direction: row;
+
+    }
+    .aboutus .rightside{
+        flex-direction: row;
+    }
+    .aboutus .rightside .about_content{
+        margin: 1em 1em 1em 1em;
+        
+    }
+    .aboutus .leftside .imageContainer img{
+        height: 250px;
+
+    }
+  }
+  @media(max-width: 800px){
+    .aboutus .leftside .imageContainer img{
+        height: 200px;
+    }
+    .landingpage .leftside h2{
+        font-size: 1.5em;
+    }
+    .landingpage .leftside h1{
+        font-size: 5em;
+    }
+    .landingpage .leftside h4{
+        font-size: 1em;
+    }
+.landingpage .leftside .joinnow a{
+    font-size: 1em;
+}
+.landingpage .rightside .imageContainer img{
+    height: 300px;
+    }
+  }
+
+  @media(max-width: 550px){
+    .aboutus .leftside{
+        flex-direction: column;
+
+    }
+    .aboutus .leftside .imageContainer img{
+        height: 200px;
+
+    }
+   
+    .aboutus .rightside .about_content p{
+        font-size: 0.8em;
+        width: 250px;
+
+    }
+    .landingpage{
+        flex-direction: column-reverse;
+        justify-content:center;
+    }
+    .landingpage .leftside{
+        align-items: center;
+    }
+    .landingpage .leftside h2{
+        font-size: 2em;
+    }
+    .landingpage .leftside h1{
+        font-size: 4em;
+    }
+    .landingpage .leftside h4{
+        font-size: 1em;
+    }
+    .landingpage .rightside .imageContainer img{
+        height: 250px;
+    }
+    .landingpage .leftside .joinnow a{
+        font-size: 1em;
+    }
+
+  }

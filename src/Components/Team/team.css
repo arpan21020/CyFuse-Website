@@ -1,0 +1,101 @@
+.teamcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 4em;    
+}
+.teamcontainer .quote h1{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    text-wrap: wrap;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 2em;
+    color: #242565;
+    font-size: 3em;
+}
+.teamcontainer .headings{
+    display: flex;
+    margin: 2em;
+    /* padding: 2em; */
+    width: -webkit-fill-available;
+    
+
+}
+.teamcontainer .headings h2{
+    flex-shrink: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #242565;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+.teamcontainer .headings .hr-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-left: 2em;
+
+}
+
+.teamcontainer .headings .hr-container hr{
+    color: #9D9EA3;
+    width: 100%;  
+    border: 2px solid #9D9EA3;
+}
+
+.teamcontainer .coordinators{
+    display: flex;
+    justify-content: space-around;
+    width: -webkit-fill-available;    
+    flex-wrap: wrap;
+
+}
+
+.teamcontainer .coreteam{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.teamcontainer .coordinators .cardholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* min-height: 555px; */
+}
+.teamcontainer .coreteam .cardholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    flex-wrap: wrap;
+    /* min-height: 555px; */
+}
+
+@media (max-width:570px) {
+    .teamcontainer .headings{
+        
+        margin: 0em;
+        padding: 0em;
+        font-size: small;
+    }
+    .teamcontainer{
+        margin: 1em 1em;
+    }
+    .teamcontainer .quote h1{
+        font-size: 1.7em;
+    }
+    
+}
